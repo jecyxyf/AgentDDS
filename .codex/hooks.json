@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .codex/tools/rfc2119/node_modules/rfc2119/dist/cli.js hook after-edit --platform codex"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+          "command": "node .codex/tools/rfc2119/node_modules/rfc2119/dist/cli.js hook stop --platform codex"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+          "command": "node .codex/tools/rfc2119/node_modules/rfc2119/dist/cli.js hook session-start --platform codex"
+          }
+        ]
+      }
+    ]
+  }
+}

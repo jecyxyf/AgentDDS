@@ -1,0 +1,4 @@
+specs: ["specs/requirements/**/*.md", "specs/models/**/*.md"]
+tests: ["test/**", "tests/**", "**/*.test.*"]
+# Codex 评审派发时使用 model_reasoning_effort=xhigh；2119 不会自动设置 effort。
+review_model: "gpt-6-astra"

@@ -1,0 +1,6 @@
+.codex/tools/rfc2119/node_modules/
+.codex/tools/rfc2119/.offline-install.json
+.codex/tools/rfc2119/.node_modules-offline-*
+
+# Local model credentials
+/test/model_config
